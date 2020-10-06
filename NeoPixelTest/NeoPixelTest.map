@@ -1,0 +1,424 @@
+HI-TECH Software C Compiler 
+
+Linker command line:
+
+\
+  --edf=C:\Program Files (x86)\HI-TECH Software\PICC-18\PRO\9.63\dat\en_msgs.txt \
+  -cs -h+NeoPixelTest.sym -z -Q18F4620 -ol.obj -MNeoPixelTest.map -E1 \
+  -ACODE=00h-0FFFFh -ACONST=00h-0FFFFh -ASMALLCONST=01000h-010FFhx240 \
+  -AMEDIUMCONST=01000h-0FFFFh -ARAM=00h-0FFhx15,0F00h-0F7Fh \
+  -ABIGRAM=00h-0F7Fh -ACOMRAM=00h-07Fh -AABS1=00h-0F7Fh -ABANK0=00h-0FFh \
+  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
+  -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
+  -ABANK7=0700h-07FFh -ABANK8=0800h-08FFh -ABANK9=0900h-09FFh \
+  -ABANK10=0A00h-0AFFh -ABANK11=0B00h-0BFFh -ABANK12=0C00h-0CFFh \
+  -ABANK13=0D00h-0DFFh -ABANK14=0E00h-0EFFh -ABANK15=0F00h-0F7Fh \
+  -ANVRAM=0F00h-0F7Fh \
+  -preset_vec=00h,intcode,intcodelo,powerup,init,end_init -pramtop=01000h \
+  -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST -pconst=CONST \
+  -prparam=COMRAM -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh \
+  -pconfig=CONFIG -AIDLOC=0200000h-0200007h -pidloc=IDLOC \
+  -AEEDATA=0F00000h-0F003FFh -peeprom_data=EEDATA \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE startup.obj \
+  NeoPixelTest.obj 
+
+Object code version is 3.10
+
+Machine type is 18F4620
+
+Call graph: (short form)
+
+*_main size 0,31 offset 0
+     _LCD_Init size 0,0 offset 31
+         _LCD_Inst size 0,1 offset 32
+             _LCD_Strobe size 0,0 offset 33
+                 _LCD_Pause size 0,0 offset 33
+             _Wait_ms size 2,2 offset 33
+         _Wait_ms size 2,2 offset 33
+*    _LCD_Move size 1,0 offset 31
+*        _LCD_Inst size 0,1 offset 32
+     _LCD_Write size 0,1 offset 31
+         _LCD_Strobe size 0,0 offset 33
+*    _Wait_ms size 2,2 offset 33
+     _NeoPixel_Display size 2,0 offset 31
+     _Wait size 2,2 offset 31
+
+Estimated maximum call depth: 4
+
+
+                Name          Link     Load   Length Selector Space Scale
+startup.obj     end_init         2        2        4       0     0
+                init             0        0        2       0     0
+NeoPixelTest.obj
+                smallcons     1000     1000       16     800     0
+                text9         1402     1402        C     80B     0
+                text8         13F0     13F0       12     80B     0
+                text7         1362     1362       28     80B     0
+                pa_nodes      13D8     13D8       18     80B     0
+                text6         1332     1332       30     80B     0
+                text1         1290     1290       3A     80B     0
+                text0         1016     1016      27A     80B     0
+                text2         13B2     13B2       26     80B     0
+                text5         12CA     12CA       34     80B     0
+                text4         138A     138A       28     80B     0
+                text3         12FE     12FE       34     80B     0
+
+COMMON          rparam           1        1       25       1     1
+
+TOTAL           Name          Link     Load   Length  Space
+        CLASS   CODE           
+                end_init         2        2        4     0
+                init             0        0        2     0
+                text9         1402     1402        C     0
+                text8         13F0     13F0       12     0
+                text7         1362     1362       28     0
+                pa_nodes      13D8     13D8       18     0
+                text6         1332     1332       30     0
+                text1         1290     1290       3A     0
+                text0         1016     1016      27A     0
+                text2         13B2     13B2       26     0
+                text5         12CA     12CA       34     0
+                text4         138A     138A       28     0
+                text3         12FE     12FE       34     0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+                smallcons     1000     1000       16     0
+
+        CLASS   MEDIUMCONST    
+
+        CLASS   RAM            
+
+        CLASS   BIGRAM         
+
+        CLASS   COMRAM         
+                rparam           1        1       25     1
+
+        CLASS   ABS1           
+                abs_s1           0        0        1     1
+
+        CLASS   BANK0          
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   BANK4          
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BANK7          
+
+        CLASS   BANK8          
+
+        CLASS   BANK9          
+
+        CLASS   BANK10         
+
+        CLASS   BANK11         
+
+        CLASS   BANK12         
+
+        CLASS   BANK13         
+
+        CLASS   BANK14         
+
+        CLASS   BANK15         
+
+        CLASS   NVRAM          
+
+        CLASS   FARRAM         
+
+        CLASS   CONFIG         
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name           Load    Length   Top     Selector    Space Class
+
+                reset_vec       000000  000006  000006         0       0  CODE    
+                rparam          000001  000025  000026         1       1  COMRAM  
+                smallconst      001000  000016  001016       800       0  SMALLCON
+                idata           001016  0003F8  00140E       80B       0  CODE    
+
+
+UNUSED ADDRESS RANGES
+
+        BANK0            000026-0000FF
+        BANK1            000100-0001FF
+        BANK10           000A00-000AFF
+        BANK11           000B00-000BFF
+        BANK12           000C00-000CFF
+        BANK13           000D00-000DFF
+        BANK14           000E00-000EFF
+        BANK15           000F00-000F7F
+        BANK2            000200-0002FF
+        BANK3            000300-0003FF
+        BANK4            000400-0004FF
+        BANK5            000500-0005FF
+        BANK6            000600-0006FF
+        BANK7            000700-0007FF
+        BANK8            000800-0008FF
+        BANK9            000900-0009FF
+        BIGRAM           000026-000F7F
+        CODE             000006-000FFF
+                         00140E-00FFFF
+        COMRAM           000026-00007F
+        CONFIG           300000-30000D
+        CONST            000006-000FFF
+                         00140E-00FFFF
+        EEDATA           F00000-F003FF
+        IDLOC            200000-200007
+        MEDIUMCONST      00140E-00FFFF
+        NVRAM            000F00-000F7F
+        RAM              000026-000F7F
+        SMALLCONST       00140E-00FFFF
+
+                                  Symbol Table
+
+??_LCD_Init               rparam       000020
+??_LCD_Inst               rparam       000021
+??_LCD_Move               rparam       000021
+??_LCD_Pause              rparam       000022
+??_LCD_Strobe             rparam       000022
+??_LCD_Write              rparam       000020
+??_NeoPixel_Display       rparam       000022
+??_Wait                   rparam       000022
+??_Wait_ms                rparam       000024
+??_main                   rparam       000001
+?_LCD_Init                rparam       000020
+?_LCD_Inst                rparam       000021
+?_LCD_Move                rparam       000020
+?_LCD_Pause               rparam       000022
+?_LCD_Strobe              rparam       000022
+?_LCD_Write               rparam       000020
+?_NeoPixel_Display        rparam       000020
+?_Wait                    rparam       000020
+?_Wait_ms                 rparam       000022
+?_main                    rparam       000001
+LCD_Move@Col              rparam       000020
+NeoPixel_Display@BLUE     rparam       000021
+NeoPixel_Display@GREEN    rparam       000020
+Wait@X                    rparam       000020
+Wait@j                    rparam       000022
+Wait_ms@X                 rparam       000022
+Wait_ms@j                 rparam       000024
+_ADCON1                   (abs)        000FC1
+_LCD_Init                 text5        0012CA
+_LCD_Inst                 text6        001332
+_LCD_Move                 text1        001290
+_LCD_Pause                text9        001402
+_LCD_Strobe               text8        0013F0
+_LCD_Write                text2        0013B2
+_MSG0                     smallconst   001001
+_NeoPixel_Display         text3        0012FE
+_PIXEL                    (abs)        000000
+_PORTB                    (abs)        000F81
+_PORTC                    (abs)        000F82
+_PORTD                    (abs)        000F83
+_PORTE                    (abs)        000F84
+_RB0                      (abs)        007C08
+_RB1                      (abs)        007C09
+_RB2                      (abs)        007C0A
+_RB3                      (abs)        007C0B
+_RB4                      (abs)        007C0C
+_RB5                      (abs)        007C0D
+_RB6                      (abs)        007C0E
+_RB7                      (abs)        007C0F
+_RD1                      (abs)        007C19
+_RD2                      (abs)        007C1A
+_RD3                      (abs)        007C1B
+_TRISA                    (abs)        000F92
+_TRISB                    (abs)        000F93
+_TRISC                    (abs)        000F94
+_TRISD                    (abs)        000F95
+_TRISD0                   (abs)        007CA8
+_TRISE                    (abs)        000F96
+_Wait                     text4        00138A
+_Wait_ms                  text7        001362
+__Bnvbit                  nvbit        000026
+__Brbit                   rbit         000026
+__HRAM                    (abs)        000000
+__Habsbss0                (abs)        000001
+__Hbigbss                 bigbss       000026
+__Hbigdata                bigdata      000026
+__Hbss                    bss          000026
+__Hclrtext                clrtext      001016
+__Hconfig                 config       300000
+__Hconst                  const        001016
+__Hdata                   data         001016
+__Heeprom_data            eeprom_data  F00000
+__Hend_init               end_init     000006
+__Hfarbss                 farbss       000000
+__Hfardata                fardata      000000
+__Hibigdata               ibigdata     001016
+__Hidata                  idata        001016
+__Hidloc                  idloc        200000
+__Hifardata               ifardata     001016
+__Hinit                   init         000002
+__Hintcode                intcode      000000
+__Hintcodelo              intcodelo    000000
+__Hintentry               intentry     001016
+__Hintret                 intret       001016
+__Hintsave_regs           intsave_regs 000026
+__Hirdata                 irdata       001016
+__Hmediumconst            mediumconst  001016
+__Hnvbit                  nvbit        000130
+__Hnvram                  nvram        001016
+__Hnvrram                 nvrram       000026
+__Hpa_nodes               pa_nodes     001016
+__Hparam                  rparam       000026
+__Hparam0                 param0       001016
+__Hparam1                 param1       001016
+__Hparam10                param10      001016
+__Hparam11                param11      001016
+__Hparam12                param12      001016
+__Hparam13                param13      001016
+__Hparam14                param14      001016
+__Hparam15                param15      001016
+__Hparam2                 param2       001016
+__Hparam3                 param3       001016
+__Hparam4                 param4       001016
+__Hparam5                 param5       001016
+__Hparam6                 param6       001016
+__Hparam7                 param7       001016
+__Hparam8                 param8       001016
+__Hparam9                 param9       001016
+__Hpowerup                powerup      000000
+__Hramtop                 ramtop       001000
+__Hrbit                   rbit         000130
+__Hrbss                   rbss         000026
+__Hrdata                  rdata        000026
+__Hreset_vec              reset_vec    000000
+__Hrparam                 rparam       000026
+__Hsmallconst             smallconst   001016
+__Hstruct                 struct       000026
+__Htemp                   temp         000026
+__Htext                   text         001016
+__Htext0                  text0        001016
+__Htext1                  text1        001016
+__Htext2                  text2        001016
+__Htext3                  text3        001016
+__Htext4                  text4        001016
+__Htext5                  text5        001016
+__Htext6                  text6        001016
+__Htext7                  text7        001016
+__Htext8                  text8        001016
+__Htext9                  text9        001016
+__LRAM                    (abs)        000001
+__Labsbss0                (abs)        000000
+__Lbigbss                 bigbss       000026
+__Lbigdata                bigdata      000026
+__Lbss                    bss          000026
+__Lclrtext                clrtext      001016
+__Lconfig                 config       300000
+__Lconst                  const        001016
+__Ldata                   (abs)        000000
+__Leeprom_data            eeprom_data  F00000
+__Lend_init               end_init     000002
+__Lfarbss                 farbss       000000
+__Lfardata                fardata      000000
+__Libigdata               ibigdata     001016
+__Lidata                  idata        001016
+__Lidloc                  idloc        200000
+__Lifardata               ifardata     001016
+__Linit                   init         000000
+__Lintcode                intcode      000000
+__Lintcodelo              intcodelo    000000
+__Lintentry               intentry     001016
+__Lintret                 intret       001016
+__Lintsave_regs           intsave_regs 000026
+__Lirdata                 irdata       001016
+__Lmediumconst            mediumconst  001016
+__Lnvbit                  nvbit        000130
+__Lnvram                  nvram        001016
+__Lnvrram                 nvrram       000026
+__Lpa_nodes               pa_nodes     001016
+__Lparam                  rparam       000001
+__Lparam0                 param0       001016
+__Lparam1                 param1       001016
+__Lparam10                param10      001016
+__Lparam11                param11      001016
+__Lparam12                param12      001016
+__Lparam13                param13      001016
+__Lparam14                param14      001016
+__Lparam15                param15      001016
+__Lparam2                 param2       001016
+__Lparam3                 param3       001016
+__Lparam4                 param4       001016
+__Lparam5                 param5       001016
+__Lparam6                 param6       001016
+__Lparam7                 param7       001016
+__Lparam8                 param8       001016
+__Lparam9                 param9       001016
+__Lpowerup                powerup      000000
+__Lramtop                 ramtop       001000
+__Lrbit                   rbit         000130
+__Lrbss                   rbss         000026
+__Lrdata                  rdata        000026
+__Lreset_vec              reset_vec    000000
+__Lrparam                 rparam       000001
+__Lsmallconst             smallconst   001000
+__Lstruct                 struct       000026
+__Ltemp                   temp         000026
+__Ltext                   text         001016
+__Ltext0                  text0        001016
+__Ltext1                  text1        001016
+__Ltext2                  text2        001016
+__Ltext3                  text3        001016
+__Ltext4                  text4        001016
+__Ltext5                  text5        001016
+__Ltext6                  text6        001016
+__Ltext7                  text7        001016
+__Ltext8                  text8        001016
+__Ltext9                  text9        001016
+__S0                      (abs)        F00000
+__S1                      (abs)        000F00
+__accesstop               (abs)        000080
+__activetblptr            (abs)        000003
+__end_of_LCD_Init         text5        0012FE
+__end_of_LCD_Inst         text6        001362
+__end_of_LCD_Move         text1        0012CA
+__end_of_LCD_Pause        text9        00140E
+__end_of_LCD_Strobe       text8        001402
+__end_of_LCD_Write        text2        0013D8
+__end_of_NeoPixel_Display text3        001332
+__end_of_Wait             text4        0013B2
+__end_of_Wait_ms          text7        00138A
+__end_of_main             text0        001290
+__mediumconst             mediumconst  001016
+__ramtop                  ramtop       001000
+__smallconst              smallconst   001000
+_exit                     init         000000
+_main                     text0        001016
+intlevel0                 text         00140E
+intlevel1                 text         00140E
+intlevel2                 text         00140E
+intlevel3                 text         00140E
+main@i                    rparam       000001
+main@i_80                 rparam       000003
+main@i_81                 rparam       000005
+main@i_82                 rparam       000007
+main@i_83                 rparam       000009
+main@i_84                 rparam       00000B
+main@i_85                 rparam       00000D
+main@i_86                 rparam       00000F
+main@i_87                 rparam       000011
+main@i_88                 rparam       000013
+main@i_89                 rparam       000015
+main@i_90                 rparam       000017
+main@i_92                 rparam       000019
+main@i_93                 rparam       00001B
+main@i_94                 rparam       00001D
+start                     init         000000

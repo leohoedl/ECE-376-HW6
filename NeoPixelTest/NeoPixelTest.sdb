@@ -1,0 +1,186 @@
+[p GLOBOPT AUTOSTATIC LFSROK SPACEOPT EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4620 ]
+"44 C:\Users\leeee\Desktop\NeoPixelTest\lcd_portd.c
+[v _c `uc  1 a 1 prodl ]
+"62
+[v _c `uc  1 a 1 prodl ]
+"22 C:\Users\leeee\Desktop\NeoPixelTest\NeoPixel0.c
+[v _RED `uc  1 a 1 fsr0l ]
+"54 C:\Users\leeee\Desktop\NeoPixelTest\lcd_portd.c
+[v _Row `uc  1 a 1 fsr2l ]
+[v _Row `uc  1 a 1 fsr2l ]
+"62
+[v _c `uc  1 a 1 prodl ]
+"22 C:\Users\leeee\Desktop\NeoPixelTest\NeoPixel0.c
+[v _RED `uc  1 a 1 fsr0l ]
+"44 C:\Users\leeee\Desktop\NeoPixelTest\lcd_portd.c
+[v _c `uc  1 a 1 prodl ]
+"16
+[v _Wait_ms `(v  1 e 0 0 ]
+"25
+[v _LCD_Pause `(v  1 e 0 0 ]
+"32
+[v _LCD_Strobe `(v  1 e 0 0 ]
+"44
+[v _LCD_Inst `(v  1 e 0 0 ]
+"54
+[v _LCD_Move `(v  1 e 0 0 ]
+"62
+[v _LCD_Write `(v  1 e 0 0 ]
+"73
+[v _LCD_Init `(v  1 e 0 0 ]
+"22 C:\Users\leeee\Desktop\NeoPixelTest\NeoPixel0.c
+[v _NeoPixel_Display `(v  1 e 0 0 ]
+"57
+[v _Wait `(v  1 e 0 0 ]
+"68
+[v _main `(v  1 e 0 0 ]
+"90 C:\Program Files (x86)\HI-TECH Software\PICC-18\PRO\9.63\include\pic18f4620.h
+[v _ADCON1 `Nuc  1 e 1 @4033 ]
+"133
+[v _TRISE `VNuc  1 e 1 @3990 ]
+"134
+[v _TRISD `VNuc  1 e 1 @3989 ]
+"136
+[v _TRISC `VNuc  1 e 1 @3988 ]
+"137
+[v _TRISB `VNuc  1 e 1 @3987 ]
+"138
+[v _TRISA `VNuc  1 e 1 @3986 ]
+"146
+[v _PORTE `VNuc  1 e 1 @3972 ]
+"148
+[v _PORTD `VNuc  1 e 1 @3971 ]
+"150
+[v _PORTC `VNuc  1 e 1 @3970 ]
+"151
+[v _PORTB `VNuc  1 e 1 @3969 ]
+"518
+[v _TRISD0 `VNb  1 e 0 @31912 ]
+"617
+[v _RD1 `VNb  1 e 0 @31769 ]
+"618
+[v _RD2 `VNb  1 e 0 @31770 ]
+"619
+[v _RD3 `VNb  1 e 0 @31771 ]
+"637
+[v _RB0 `VNb  1 e 0 @31752 ]
+"638
+[v _RB1 `VNb  1 e 0 @31753 ]
+"639
+[v _RB2 `VNb  1 e 0 @31754 ]
+"640
+[v _RB3 `VNb  1 e 0 @31755 ]
+"641
+[v _RB4 `VNb  1 e 0 @31756 ]
+"642
+[v _RB5 `VNb  1 e 0 @31757 ]
+"643
+[v _RB6 `VNb  1 e 0 @31758 ]
+"644
+[v _RB7 `VNb  1 e 0 @31759 ]
+"10 C:\Users\leeee\Desktop\NeoPixelTest\NeoPixel0.c
+[v _PIXEL `uc  1 e 1 @0 ]
+"12
+[v _MSG0 `DC[20]uc  1 e 20 0 ]
+"68
+[v _main `(v  1 e 0 0 ]
+{
+"69
+[v _i `ui  1 a 2 0 ]
+"95
+[v _i `i  1 a 2 2 ]
+"98
+[v _i `i  1 a 2 4 ]
+"103
+[v _i `i  1 a 2 6 ]
+"106
+[v _i `i  1 a 2 8 ]
+"111
+[v _i `i  1 a 2 10 ]
+"114
+[v _i `i  1 a 2 12 ]
+"119
+[v _i `i  1 a 2 14 ]
+"122
+[v _i `i  1 a 2 16 ]
+"127
+[v _i `i  1 a 2 18 ]
+"130
+[v _i `i  1 a 2 20 ]
+"135
+[v _i `i  1 a 2 22 ]
+"143
+[v _i `i  1 a 2 24 ]
+"146
+[v _i `i  1 a 2 26 ]
+"151
+[v _i `i  1 a 2 28 ]
+"160
+} 30
+"54 C:\Users\leeee\Desktop\NeoPixelTest\lcd_portd.c
+[v _LCD_Move `(v  1 e 0 0 ]
+{
+[v _Row `uc  1 a 1 wreg ]
+[v _Col `uc  1 p 1 0 ]
+[v _Row `uc  1 a 1 fsr2l ]
+"59
+} 0
+"62
+[v _LCD_Write `(v  1 e 0 0 ]
+{
+[v _c `uc  1 a 1 wreg ]
+[v _c `uc  1 a 1 prodl ]
+"69
+} 0
+"22 C:\Users\leeee\Desktop\NeoPixelTest\NeoPixel0.c
+[v _NeoPixel_Display `(v  1 e 0 0 ]
+{
+[v _RED `uc  1 a 1 wreg ]
+[v _GREEN `uc  1 p 1 0 ]
+[v _BLUE `uc  1 p 1 1 ]
+[v _RED `uc  1 a 1 fsr0l ]
+"54
+} 0
+"57
+[v _Wait `(v  1 e 0 0 ]
+{
+"58
+[v _j `ui  1 a 2 0 ]
+"57
+[v _X `ui  1 p 2 0 ]
+"62
+} 2
+"73 C:\Users\leeee\Desktop\NeoPixelTest\lcd_portd.c
+[v _LCD_Init `(v  1 e 0 0 ]
+{
+"83
+} 0
+"44
+[v _LCD_Inst `(v  1 e 0 0 ]
+{
+[v _c `uc  1 a 1 wreg ]
+[v _c `uc  1 a 1 prodl ]
+"51
+} 0
+"16
+[v _Wait_ms `(v  1 e 0 0 ]
+{
+"17
+[v _j `ui  1 a 2 0 ]
+"16
+[v _X `ui  1 p 2 0 ]
+"21
+} 2
+"32
+[v _LCD_Strobe `(v  1 e 0 0 ]
+{
+"39
+} 0
+"25
+[v _LCD_Pause `(v  1 e 0 0 ]
+{
+"28
+} 0
